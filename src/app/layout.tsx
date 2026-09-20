@@ -21,6 +21,8 @@ const jetBrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+import "./globals.css";
+
 export const metadata: Metadata = {
   title: "SouJunior Apoia.se",
   description: "Landing page do SouJunior Apoia.se",

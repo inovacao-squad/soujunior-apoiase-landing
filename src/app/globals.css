@@ -1,3 +1,4 @@
+* {
 /* =====================================================
    GLOBAL · DESIGN TOKENS
    (nomes idênticos ao index.html original — NÃO renomear)
@@ -57,6 +58,14 @@
 }
 
 html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #f5f2e9;
+}
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
   -webkit-text-size-adjust: 100%;
