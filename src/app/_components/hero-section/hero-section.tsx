@@ -42,6 +42,10 @@ export function HeroSection() {
                 Conhecer a SouJunior
               </Link>
             </div>
+
+            <div className={styles.signature}>
+              <span>Feito para quem acredita no primeiro passo.</span>
+            </div>
           </div>
           <div className={styles.heroSide}>
             <div className={styles.heroPhoto}>

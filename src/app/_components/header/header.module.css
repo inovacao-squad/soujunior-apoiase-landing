@@ -301,16 +301,17 @@
 
 @media (max-width: 480px) {
   .header {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
   }
 
   .headerInner {
-    padding-left: 0.6rem;
+    gap: 0.64rem;
+    padding: 0.32rem 0.32rem 0.32rem 0.6rem;
     border-radius: 1rem;
   }
 
   .brand img {
-    height: 1.45rem;
+    height: 1.28rem;
   }
 
   .headerActions .small {
@@ -318,12 +319,12 @@
   }
 
   .burger {
-    width: 2.35rem;
-    height: 2.35rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .mobileMenu {
-    inset: 0.5rem 0.5rem 0.5rem auto;
+    inset: 0.4rem 0.4rem 0.4rem auto;
     width: min(84vw, 20rem);
     border-radius: 1.1rem;
   }

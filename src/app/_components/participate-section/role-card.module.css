@@ -123,9 +123,10 @@
 }
 
 .title {
+  margin: 0;
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(1rem, 1.8vw, 1.45rem);
+  font-size: clamp(0.95rem, 1.8vw, 1.45rem);
   letter-spacing: -0.035em;
   color: var(--ink);
   line-height: 1.05;
