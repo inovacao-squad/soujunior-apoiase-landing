@@ -32,9 +32,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <About />
-
         <IniciativasSection />
-
         <Participate />
         <Transparency />
         <Closing />

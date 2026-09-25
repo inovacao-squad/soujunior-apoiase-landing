@@ -22,6 +22,7 @@
 .heroGrid > div:first-child h1,
 .heroGrid > div:first-child .lead,
 .heroGrid > div:first-child .heroActions,
+.heroGrid > div:first-child .signature,
 .heroGrid .heroSide {
   opacity: 0;
   animation-fill-mode: forwards;
@@ -37,6 +38,10 @@
 
 .heroGrid > div:first-child .heroActions {
   animation: heroReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 240ms forwards;
+}
+
+.heroGrid > div:first-child .signature {
+  animation: heroReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 300ms forwards;
 }
 
 .heroGrid .heroSide {
@@ -71,10 +76,36 @@
   .heroGrid > div:first-child h1,
   .heroGrid > div:first-child .lead,
   .heroGrid > div:first-child .heroActions,
+  .heroGrid > div:first-child .signature,
   .heroGrid .heroSide {
     opacity: 1;
     animation: none;
   }
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  color: var(--blue);
+  font-family: var(--hand);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1;
+  transform: rotate(-3deg);
+  transform-origin: left center;
+  letter-spacing: 0.02em;
+}
+
+.signature span {
+  display: inline-block;
+}
+
+.curveArrow {
+  width: clamp(2rem, 2.4vw, 2.5rem);
+  height: clamp(1.5rem, 2vw, 2rem);
+  overflow: visible;
+  color: currentColor;
 }
 
 .hero h1 {
@@ -322,18 +353,77 @@
     padding-bottom: 2rem;
   }
 
+  .heroGrid {
+    text-align: center;
+  }
+
+  .heroGrid > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1,
+  .lead,
+  .heroActions,
+  .signature {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroActions {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .signature {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transform: rotate(-2deg);
+  }
+
+  .lead {
+    font-size: calc(0.9rem * 0.9);
+  }
+
+  .curveArrow {
+    width: 2rem;
+    height: 1.5rem;
+    overflow: visible;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 18rem;
+    justify-content: center;
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+
   .heroPhoto {
+    display: block;
+    width: 100%;
+    max-width: 17.6rem;
     aspect-ratio: 5 / 4;
-    max-width: 100%;
+    margin: 0 auto;
   }
 
   .heroPhoto img {
-    transform: translateX(-50%) scale(1.25);
+    transform: translateX(-50%) scale(1.375);
   }
 
   .heroSide {
-    max-width: 22rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 17.6rem;
+    margin: 0 auto;
     gap: 1rem;
+    opacity: 1;
   }
 
   .heroSticker {
