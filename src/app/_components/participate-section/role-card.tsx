@@ -31,7 +31,6 @@ export function RoleCard({ role, index }: RoleCardProps) {
   return (
     <article className={`${styles.card} ${variantClass}`}>
       <div className={styles.top}>
-
         <h3 className={styles.title}>{role.title}</h3>
 
         <span className={styles.icon} aria-hidden="true">
